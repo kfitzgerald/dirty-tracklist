@@ -1,15 +1,43 @@
-# Getting Started with Create React App
+# Dirty Tracklist Formatter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Quick 'n dirty Rekordbox tracklist formatter. 
 
-## Available Scripts
+Live version here: [https://dirtybriefs.net/track-formatter/](https://dirtybriefs.net/track-formatter/)
+
+Takes Rekordbox tracklists, such as:
+```tsv
+#	Artwork	Track Title	Artist	Remixer	Mix Name	Album	Genre	BPM	Rating	Time	Key	Date Added
+1		Garden Of The Gods	Hausman, Discognition, Lumynesynth		Original Mix	Higher Peaks	Progressive House	122.00	     	04:21	Bb	2023-02-19
+2		Wild Skies	Eli & Fur		Original Mix	Carbon	Organic House / Downtempo	98.00	     	03:24	Eb	2023-02-19
+3		Menuda	PAAX (Tulum)		Original Mix	Hypnos	Organic House / Downtempo	210.00	     	07:12	Eb	2023-02-19
+4		Atlas	Stefan Obermaier	PAAX (Tulum)	PAAX (Tulum) Remix	Atlas	Organic House / Downtempo	123.00	     	07:46	G	2023-02-19
+5		Back To The Roots	Amonita, Makebo		Extended Mix	Back To The Roots	Organic House / Downtempo	122.00	     	09:43	A	2023-02-19
+6		Zoo	DSF		Original Mix	Feel Like Home EP	Organic House / Downtempo	123.00	     	07:32	D	2023-02-19
+7		Hericium	John Cosani		Original Mix	Hericium	Progressive House	120.00	     	07:56	D	2022-07-15
+```
+
+and formats them for posting on SoundCloud / Mixcloud / Youtube etc:
+
+```txt
+1. Hausman, Discognition, Lumynesynth – Garden Of The Gods
+2. Eli & Fur – Wild Skies
+3. PAAX (Tulum) – Menuda
+4. Stefan Obermaier – Atlas (PAAX (Tulum) Remix)
+5. Amonita, Makebo – Back To The Roots
+6. DSF – Zoo
+7. John Cosani – Hericium
+```
+
+* Supports custom formatting, custom regex token removal, and zero-padding track numbers.
+
+## Run the app locally
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000/track-formatter](http://localhost:3000/track-formatter) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -25,9 +53,13 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Create React App
+
+This thing was created as an excuse to try create-react-app. So, here's some other stuff related to that.
 
 ### `npm run eject`
 
