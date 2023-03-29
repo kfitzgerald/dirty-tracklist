@@ -101,3 +101,20 @@ input.form-control {
     margin-bottom: 1em;
   }
 }
+
+footer {
+  color: #8a8e97;
+  font-size: 0.75em;
+  border-top: solid 1px #3e434d;
+  padding-top: 1em;
+  margin-top: 2em;
+
+  a {
+    color: #9fa3af;
+
+    &:hover {
+      color: #b4b8c5;
+    }
+  }
+
+}

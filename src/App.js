@@ -143,6 +143,9 @@ function App() {
                         {error.message || error}
                     </Alert>
                 )}
+                <footer>
+                    <a href="https://github.com/kfitzgerald/dirty-tracklist" target="_blank" rel="noreferrer">Open Source</a> app made by <a href="https://www.twitch.tv/dirtybriefs" target="_blank" rel="noreferrer">Dirtybriefs</a> because <a href="https://www.twitch.tv/shaneboehm" target="_blank" rel="noreferrer">ShaneBoehm</a> said so.
+                </footer>
             </aside>
         </div>
     );
